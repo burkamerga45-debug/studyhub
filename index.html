@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StudyHub — Study Together, Grow Together</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-icon">S</div>
+      <div>
+        <h1>StudyHub</h1>
+        <span>Learn. Focus. Grow.</span>
+      </div>
+    </div>
+
+    <nav>
+      <button class="nav-item active" data-page="dashboard">
+        <span>⌂</span>
+        Dashboard
+      </button>
+
+      <button class="nav-item" data-page="subjects">
+        <span>📚</span>
+        Subjects
+      </button>
+
+      <button class="nav-item" data-page="groups">
+        <span>👥</span>
+        Study Groups
+      </button>
+
+      <button class="nav-item" data-page="tasks">
+        <span>✓</span>
+        Tasks
+      </button>
+
+      <button class="nav-item" data-page="sessions">
+        <span>⏱</span>
+        Study Sessions
+      </button>
+
+      <button class="nav-item" data-page="notes">
+        <span>📝</span>
+        Notes
+      </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="grade-box">
+        <span>Your Grade</span>
+        <strong>Grade 9</strong>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+
+      <div>
+        <p class="eyebrow">THURSDAY, AUGUST 27</p>
+        <h2>Welcome back 👋</h2>
+      </div>
+
+      <div class="profile">
+        <div class="profile-avatar">B</div>
+        <div>
+          <strong>Student</strong>
+          <span>Grade 9</span>
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <section class="page active-page" id="dashboard">
+
+      <div class="hero">
+
+        <div class="hero-text">
+          <span class="hero-label">STUDYHUB</span>
+
+          <h3>Study smarter.<br>Study together.</h3>
+
+          <p>
+            Organize your subjects, work with your study groups,
+            complete your goals, and stay focused.
+          </p>
+
+          <button class="primary-btn" data-page-target="subjects">
+            Explore Subjects →
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="floating-card card-one">
+            <span>🔥</span>
+            <div>
+              <strong>Keep going</strong>
+              <small>You're building momentum</small>
+            </div>
+          </div>
+
+          <div class="focus-circle">
+            <span>FOCUS</span>
+            <strong>25:00</strong>
+          </div>
+
+          <div class="floating-card card-two">
+            <span>✓</span>
+            <div>
+              <strong>Today's goal</strong>
+              <small>3 tasks remaining</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- QUICK STATS -->
+      <div class="stats">
+
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div>
+            <span>Subjects</span>
+            <strong>12</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">✓</div>
+          <div>
+            <span>Tasks Today</span>
+            <strong>3</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">⏱</div>
+          <div>
+            <span>Study Time</span>
+            <strong>0h 00m</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">🔥</div>
+          <div>
+            <span>Study Streak</span>
+            <strong>0 days</strong>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- DASHBOARD GRID -->
+      <div class="dashboard-grid">
+
+        <div class="panel">
+
+          <div class="panel-heading">
+            <div>
+              <span class="section-label">TODAY</span>
+              <h3>Today's Tasks</h3>
+            </div>
+
+            <button class="text-btn" data-page-target="tasks">
+              View all →
+            </button>
+          </div>
+
+          <div class="task-list">
+
+            <div class="task">
+              <div class="task-check"></div>
+
+              <div class="task-info">
+                <strong>Review Mathematics notes</strong>
+                <span>Mathematics • 30 min</span>
+              </div>
+
+              <span class="task-tag">Today</span>
+            </div>
+
+            <div class="task">
+              <div class="task-check"></div>
+
+              <div class="task-info">
+                <strong>Read Physics Unit 1</strong>
+                <span>Physics • 45 min</span>
+              </div>
+
+              <span class="task-tag">Today</span>
+            </div>
+
+            <div class="task completed">
+              <div class="task-check checked">✓</div>
+
+              <div class="task-info">
+                <strong>Review Chemistry</strong>
+                <span>Chemistry • 20 min</span>
+              </div>
+
+              <span class="task-tag done">Done</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div class="panel-heading">
+            <div>
+              <span class="section-label">FOCUS</span>
+              <h3>Quick Study</h3>
+            </div>
+          </div>
+
+          <div class="timer-preview">
+
+            <div class="mini-timer">
+              <span>25:00</span>
+            </div>
+
+            <p>Ready to focus?</p>
+
+            <button class="primary-btn" data-page-target="sessions">
+              Start Session
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUBJECTS -->
+    <section class="page" id="subjects">
+
+      <div class="page-heading">
+        <div>
+          <span class="section-label">GRADE 9</span>
+          <h2>Subjects</h2>
+          <p>Choose a subject to start studying.</p>
+        </div>
+      </div>
+
+      <div class="subject-grid" id="subjectGrid"></div>
+
+    </section>
+
+
+    <!-- GROUPS -->
+    <section class="page" id="groups">
+
+      <div class="page-heading">
+        <div>
+          <span class="section-label">TOGETHER</span>
+          <h2>Study Groups</h2>
+          <p>Study with people who are working toward the same goals.</p>
+        </div>
+
+        <button class="primary-btn">+ Create Group</button>
+      </div>
+
+      <div class="empty-state">
+        <div>👥</div>
+        <h3>No study groups yet</h3>
+        <p>Create your first group and invite your classmates.</p>
+        <button class="primary-btn">Create Your First Group</button>
+      </div>
+
+    </section>
+
+
+    <!-- TASKS -->
+    <section class="page" id="tasks">
+
+      <div class="page-heading">
+        <div>
+          <span class="section-label">ORGANIZE</span>
+          <h2>Tasks</h2>
+          <p>Keep track of everything you need to study.</p>
+        </div>
+
+        <button class="primary-btn">+ Add Task</button>
+      </div>
+
+      <div class="panel">
+
+        <div class="task-list">
+
+          <div class="task">
+            <div class="task-check"></div>
+
+            <div class="task-info">
+              <strong>Review Mathematics notes</strong>
+              <span>Mathematics • 30 minutes</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-check"></div>
+
+            <div class="task-info">
+              <strong>Read Physics Unit 1</strong>
+              <span>Physics • 45 minutes</span>
+            </div>
+          </div>
+
+          <div class="task completed">
+            <div class="task-check checked">✓</div>
+
+            <div class="task-info">
+              <strong>Review Chemistry</strong>
+              <span>Chemistry • 20 minutes</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SESSIONS -->
+    <section class="page" id="sessions">
+
+      <div class="page-heading">
+        <div>
+          <span class="section-label">FOCUS MODE</span>
+          <h2>Study Session</h2>
+          <p>Put your phone down and get focused.</p>
+        </div>
+      </div>
+
+      <div class="session-container">
+
+        <div class="big-timer">
+          <span id="timer">25:00</span>
+        </div>
+
+        <div class="timer-controls">
+          <button class="primary-btn" id="startTimer">Start</button>
+          <button class="secondary-btn" id="resetTimer">Reset</button>
+        </div>
+
+        <div class="session-info">
+          <span>SESSION</span>
+          <strong>25 minute focus session</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NOTES -->
+    <section class="page" id="notes">
+
+      <div class="page-heading">
+        <div>
+          <span class="section-label">YOUR KNOWLEDGE</span>
+          <h2>Notes</h2>
+          <p>Keep your important study notes in one place.</p>
+        </div>
+
+        <button class="primary-btn">+ New Note</button>
+      </div>
+
+      <div class="empty-state">
+        <div>📝</div>
+        <h3>No notes yet</h3>
+        <p>Your notes will appear here when you create them.</p>
+        <button class="primary-btn">Create a Note</button>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
